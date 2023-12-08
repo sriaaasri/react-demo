@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Display from "./Display";
 
 
 function App(){
@@ -8,10 +9,11 @@ function App(){
         setTime(new Date().toLocaleTimeString());
 
     } , [time])
-    return <>
+    return <div>
     <h1>time is:</h1>
     <h1>{time}</h1>
-    </>
+    <Display/>
+    </div>
 }
 
 export default App;
